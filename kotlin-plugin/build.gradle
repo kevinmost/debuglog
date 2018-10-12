@@ -1,0 +1,10 @@
+apply plugin: "org.jetbrains.kotlin.jvm"
+apply plugin: "kotlin-kapt"
+
+dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:$ktVersion"
+  compileOnly "org.jetbrains.kotlin:kotlin-compiler-embeddable:$ktVersion"
+
+  compileOnly "com.google.auto.service:auto-service:1.0-rc4"
+  kapt "com.google.auto.service:auto-service:1.0-rc4"
+}
